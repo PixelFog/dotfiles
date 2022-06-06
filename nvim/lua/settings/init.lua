@@ -2,8 +2,8 @@ local options = vim.opt
 
 options.expandtab = true
 options.smarttab = true
-options.shiftwidth = 4
-options.tabstop = 4
+options.shiftwidth = 2
+options.tabstop = 2
 
 options.hlsearch = true
 options.incsearch = true
@@ -22,4 +22,6 @@ options.mouse = 'a'
 
 options.hidden = true
 
+options.laststatus = 3
+options.clipboard = 'unnamedplus'
 

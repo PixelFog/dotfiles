@@ -1,5 +1,7 @@
-local map = vim.api.nvim_set_keymap
-local opts = {noremap = true,  silent = true}
+local map = vim.keymap.set
 vim.g.mapleader = ' '
 
-map('n' , '<C-n>' , ':NvimTreeToggle<CR>', opts)
+map('n' , '<C-n>' , ':NvimTreeToggle<CR>')
+map('n' , '<C-h>' , ':NvimTreeFocus<CR>')
+map('n' , '<C-l>' , '<C-w>l')
+

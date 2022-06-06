@@ -1,13 +1,13 @@
 return require('packer').startup(function(use)
       use 'wbthomason/packer.nvim'
-     --[[ use {
+     use {
           'EdenEast/nightfox.nvim',
           config = function()
                 require('colors.nord')
           end
-      }--]]
+      }
      -- If you are using Packer
-      use 'shaunsingh/nord.nvim'
+     -- use 'shaunsingh/nord.nvim'
       use {
           'kyazdani42/nvim-tree.lua',
            requires = {
@@ -79,4 +79,16 @@ return require('packer').startup(function(use)
            require('plugins.blankline')
           end
       }
+      use {
+          'numToStr/Comment.nvim',
+            config = function()
+                require('Comment').setup()
+            end
+        }
+    use {
+        'nvim-lualine/lualine.nvim',
+        config = function ()
+            require('lualine').setup()
+        end
+    }
 end)

@@ -14,7 +14,7 @@ require('mappings')
 -- Lua
 --vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 --vim.cmd[[colorscheme catppuccin]]
-vim.cmd[[colorscheme nord]]
-vim.g.nord_disable_background = true
-require('nord').set()
+-- vim.cmd[[colorscheme nord]]
+-- vim.g.nord_disable_background = true
+-- require('nord').set()
 
