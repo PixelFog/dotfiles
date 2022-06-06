@@ -61,4 +61,22 @@ return require('packer').startup(function(use)
             require('nvim-ts-autotag').setup()
           end
       }
+      -- using packer.nvim
+      use {
+         'akinsho/bufferline.nvim', tag = "v2.*" ,
+          config = function ()
+            require("bufferline").setup{
+                options = {
+                   offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
+                   diagnostics = "nvim_lsp"
+                }
+            }
+          end
+      }
+      use {
+          'lukas-reineke/indent-blankline.nvim',
+          config = function ()
+           require('plugins.blankline')
+          end
+      }
 end)
