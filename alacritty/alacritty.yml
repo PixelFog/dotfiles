@@ -207,7 +207,7 @@ font:
 # # Apply
 # colors: *everforest_dark_medium
 
-
+    # nightfox
 colors:
   # Default colors
   primary:
