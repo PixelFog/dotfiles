@@ -1,10 +1,9 @@
 --Lua:
 -- Default options
-require('nightfox').setup({
-  options = {
-    transparent = true,    -- Disable setting background
-  }
-})
+require("nightfox").setup {
+   options = {
+      transparent = true, -- Disable setting background
+   },
+}
 
-vim.cmd("colorscheme nightfox")
-
+vim.cmd "colorscheme nightfox"
