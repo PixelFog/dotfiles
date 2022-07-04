@@ -6,10 +6,10 @@ end
 
 local hl = vim.api.nvim_set_hl
 hl(0, "IndentBlanklineContextChar", {
-   link = "Comment",
+   fg = "#6272a4",
 })
 hl(0, "IndentBlanklineContextStart", {
-   link = "Comment",
+   bg = "#323440",
 })
 local options = {
    indentLine_enabled = 1,
